@@ -116,13 +116,3 @@ def print_non_zero(feature_vector):
         for j in range(256):
             if feature_vector[i][j][0] and feature_vector[i][j][1] != 0:
                 print(j,feature_vector[i][j][0],feature_vector[i][j][1])
-
-if __name__ == "__main__": 
-
-	image = cv2.imread('test.png')
-	
-	feature_vector = get_feature_vector(image)
-	#boundary_vector = np.zeros((150//2,256,2), dtype=int) #[no. of boundaries, frequency, difference]
-	#preprocess_dim(image)
-
-
