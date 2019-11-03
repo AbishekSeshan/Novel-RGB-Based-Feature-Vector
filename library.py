@@ -141,6 +141,7 @@ def compare(image1, image2):
 		
 		total_count += freq
 		distance += boundary_sum*freq 
+		print(i,distance)
 
 	distance = float(distance/total_count) 
 

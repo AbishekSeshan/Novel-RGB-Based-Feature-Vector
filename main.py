@@ -1,4 +1,4 @@
-from library import get_feature_vector, print_vector, print_non_zero, compare
+from library import get_feature_vector, print_vector, print_non_zero, compare, preprocess_dim
 import cv2
 import numpy as np 
 
@@ -14,8 +14,8 @@ if __name__ == "__main__":
 	distance3 = compare(db_image3, query_image) 
 	print("Distance 1 is: {}".format(distance1))
 	print("Distance 2 is: {}".format(distance2))
-	print("Distance 3 is: {}".format(distance2))
-	print_non_zero(db_image3)
-	print_non_zero(query_image)
+	print("Distance 3 is: {}".format(distance3))
+	
+	
 	
 	
